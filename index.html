@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filter user list</title>
     <link rel="stylesheet" href="./main.css">
-</head>
-<body>
+  </head>
+  <body>
+<div class="container">
+    <input id="search" type="text" placeholder="Search by name..." />
+
+    <select id="city-filter">
+      <option value="">All cities</option>
+      <option value="Tehran">Tehran</option>
+      <option value="Shiraz">Shiraz</option>
+      <option value="Mashhad">Mashhad</option>
+      <option value="Isfahan">Isfahan</option>
+    </select>
+
+    <select id="age-filter">
+      <option value="">All ages</option>
+      <option value="20-25">20-25</option>
+      <option value="26-30">26-30</option>
+      <option value="31-35">31-35</option>
+    </select>
+
+    <select id="education-filter">
+        <option value="">All education</option>
+        <option value="phd">phd</option>
+        <option value="master">master</option>
+        <option value="bachelor">bachelor</option>
+        <option value="diploma">diploma</option>
+      </select>
+</div>
+
+    <div id="user-list"></div>
+
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
